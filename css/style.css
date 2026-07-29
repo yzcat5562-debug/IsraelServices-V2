@@ -234,6 +234,7 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   min-height: 30px;
   padding: 5px 14px;
   color: var(--text);
@@ -409,7 +410,7 @@ section li span {
 
 .item-columns {
   display: grid;
-  grid-template-columns: 90px 180px 1fr 100px;
+  grid-template-columns: 90px 180px 1fr 130px;
   min-height: 28px;
   color: var(--muted);
   background: rgba(0, 0, 0, 0.2);
@@ -430,7 +431,7 @@ section li span {
 
 .item {
   display: grid;
-  grid-template-columns: 90px 180px 1fr 100px;
+  grid-template-columns: 90px 180px 1fr 130px;
   align-items: center;
   min-height: 54px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
