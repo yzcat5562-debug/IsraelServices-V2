@@ -15,6 +15,19 @@
   <div class="wrap">
     <header class="hdr">
       <span class="titlebar-text">ISRAEL SERVICES</span>
+      <select class="lang-select" style="margin-left: auto; background: transparent; color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2px 4px; font-size: 10px; cursor: pointer; outline: none;">
+        <option value="en" style="background: var(--panel);" selected>English (US)</option>
+        <option value="ar" style="background: var(--panel);">العربية</option>
+        <option value="de" style="background: var(--panel);">Deutsch</option>
+        <option value="es" style="background: var(--panel);">Español</option>
+        <option value="fr" style="background: var(--panel);">Français</option>
+        <option value="hi" style="background: var(--panel);">हिन्दी</option>
+        <option value="no" style="background: var(--panel);">Norsk</option>
+        <option value="pt" style="background: var(--panel);">Português</option>
+        <option value="ru" style="background: var(--panel);">Русский</option>
+        <option value="sv" style="background: var(--panel);">Svenska</option>
+        <option value="tr" style="background: var(--panel);">Türkçe</option>
+      </select>
     </header>
     <nav class="tabs">
       <a class="tab" href="index.html">Home</a>
@@ -29,42 +42,42 @@
       <div class="panel">
         <div class="panel-titlebar">Red Match 2 Setup Guide</div>
         <div class="panel-body">
-          <h1 style="margin:0 0 12px;font-size:20px;color:var(--text)">Red Match 2 — Setup Guide</h1>
+          <h1 style="margin:0 0 12px;font-size:20px;color:var(--text)" data-i18n="guide_rm_title">Red Match 2 — Setup Guide</h1>
 
           <div style="margin-bottom: 24px;">
-            <h3 style="margin: 0 0 8px; color: var(--accent);">1. Install Redmatch 2</h3>
+            <h3 style="margin: 0 0 8px; color: var(--accent);" data-i18n="guide_rm_h1">1. Install Redmatch 2</h3>
             <ul style="color: var(--muted); line-height: 1.6; margin: 0; padding-left: 20px;">
-              <li>Open Steam and install <strong>Redmatch 2</strong> (free game)</li>
-              <li>Make sure it's in the default location:<br>
+              <li data-i18n="guide_rm_s1_1">Open Steam and install <strong>Redmatch 2</strong> (free game)</li>
+              <li><span data-i18n="guide_rm_s1_2">Make sure it's in the default location:</span><br>
                 <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; font-family: var(--mono); font-size: 11px;">C:\Program Files (x86)\Steam\steamapps\common\Redmatch 2</code>
               </li>
-              <li>Launch the game once to make sure it works, then close it</li>
+              <li data-i18n="guide_rm_s1_3">Launch the game once to make sure it works, then close it</li>
             </ul>
           </div>
 
           <div style="margin-bottom: 24px;">
-            <h3 style="margin: 0 0 8px; color: var(--accent);">2. Install</h3>
+            <h3 style="margin: 0 0 8px; color: var(--accent);" data-i18n="guide_rm_h2">2. Install</h3>
             <ul style="color: var(--muted); line-height: 1.6; margin: 0; padding-left: 20px;">
-              <li>Run <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; font-family: var(--mono); font-size: 11px;">start.bat</code> (!AND BE SURE THAT THE DLL IS IN THE SAME FOLDER!)</li>
-              <li>Start Redmatch 2 from Steam normally</li>
-              <li>A window appears asking for a key</li>
+              <li data-i18n="guide_rm_s2_1">Run <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; font-family: var(--mono); font-size: 11px;">start.bat</code> (!AND BE SURE THAT THE DLL IS IN THE SAME FOLDER!)</li>
+              <li data-i18n="guide_rm_s2_2">Start Redmatch 2 from Steam normally</li>
+              <li data-i18n="guide_rm_s2_3">A window appears asking for a key</li>
             </ul>
           </div>
 
           <div style="margin-bottom: 24px;">
-            <h3 style="margin: 0 0 8px; color: var(--accent);">3. The Key</h3>
+            <h3 style="margin: 0 0 8px; color: var(--accent);" data-i18n="guide_rm_h3">3. The Key</h3>
             <ul style="color: var(--muted); line-height: 1.6; margin: 0; padding-left: 20px;">
-              <li>Enter the key that you got from the linkvertise</li>
-              <li>Click Authenticate</li>
+              <li data-i18n="guide_rm_s3_1">Enter the key that you got from the linkvertise</li>
+              <li data-i18n="guide_rm_s3_2">Click Authenticate</li>
             </ul>
           </div>
 
           <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.05);">
-            <h3 style="margin: 0 0 12px; color: var(--text);">In-Game Controls</h3>
+            <h3 style="margin: 0 0 12px; color: var(--text);" data-i18n="guide_rm_h4">In-Game Controls</h3>
             <ul style="color: var(--muted); line-height: 1.6; margin: 0; padding-left: 20px;">
-              <li><strong style="color: #fff;">INSERT</strong> = Open/close menu</li>
-              <li><strong style="color: #fff;">END</strong> = Unload the cheat completely</li>
-              <li><strong style="color: #fff;">RMB</strong> = Aimbot (when enabled in menu)</li>
+              <li><strong style="color: #fff;">INSERT</strong> = <span data-i18n="guide_rm_c1">Open/close menu</span></li>
+              <li><strong style="color: #fff;">END</strong> = <span data-i18n="guide_rm_c2">Unload the cheat completely</span></li>
+              <li><strong style="color: #fff;">RMB</strong> = <span data-i18n="guide_rm_c3">Aimbot (when enabled in menu)</span></li>
             </ul>
           </div>
         </div>
@@ -78,5 +91,6 @@
 
   <script src="js/ui.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/translations.js"></script>
 </body>
 </html>

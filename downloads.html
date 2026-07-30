@@ -15,38 +15,51 @@
   <div class="wrap">
     <header class="hdr">
       <span class="titlebar-text">ISRAEL SERVICES</span>
+      <select class="lang-select" style="margin-left: auto; background: transparent; color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2px 4px; font-size: 10px; cursor: pointer; outline: none;">
+        <option value="en" style="background: var(--panel);" selected>English (US)</option>
+        <option value="ar" style="background: var(--panel);">العربية</option>
+        <option value="de" style="background: var(--panel);">Deutsch</option>
+        <option value="es" style="background: var(--panel);">Español</option>
+        <option value="fr" style="background: var(--panel);">Français</option>
+        <option value="hi" style="background: var(--panel);">हिन्दी</option>
+        <option value="no" style="background: var(--panel);">Norsk</option>
+        <option value="pt" style="background: var(--panel);">Português</option>
+        <option value="ru" style="background: var(--panel);">Русский</option>
+        <option value="sv" style="background: var(--panel);">Svenska</option>
+        <option value="tr" style="background: var(--panel);">Türkçe</option>
+      </select>
     </header>
     <nav class="tabs">
-      <a class="tab" href="index.html">Home</a>
-      <a class="tab" href="guides.html">Guides</a>
-      <a class="tab active" href="downloads.html" aria-current="page">Downloads</a>
-      <a class="tab" href="paid.html">Paid Products</a>
+      <a class="tab" href="index.html" data-i18n="nav_home">Home</a>
+      <a class="tab" href="guides.html" data-i18n="nav_guides">Guides</a>
+      <a class="tab active" href="downloads.html" aria-current="page" data-i18n="nav_downloads">Downloads</a>
+      <a class="tab" href="paid.html" data-i18n="nav_paid">Paid Products</a>
     </nav>
 
     <main>
-      <a class="back" href="index.html">&larr; back</a>
+      <a class="back" href="index.html" data-i18n="back">&larr; back</a>
 
       <div class="panel" style="margin-bottom:16px">
-        <div class="panel-titlebar">Downloads</div>
+        <div class="panel-titlebar" data-i18n="nav_downloads">Downloads</div>
         <div class="panel-body">
-          <h1 style="margin:0 0 6px;font-size:18px;color:var(--text)">Downloads</h1>
-          <p style="margin:0;color:var(--muted)">Free products. Paid products go through the Discord.</p>
+          <h1 style="margin:0 0 6px;font-size:18px;color:var(--text)" data-i18n="nav_downloads">Downloads</h1>
+          <p style="margin:0;color:var(--muted)" data-i18n="downloads_desc">Free products. Paid products go through the Discord.</p>
         </div>
       </div>
 
       <div class="items">
         <div class="item-columns">
-          <span>Type</span>
-          <span>Name</span>
-          <span>Description</span>
-          <span>Action</span>
+          <span data-i18n="type">Type</span>
+          <span data-i18n="name">Name</span>
+          <span data-i18n="description">Description</span>
+          <span data-i18n="action">Action</span>
         </div>
 
           <div class="item">
           <div class="item-top"><span class="item-tag">.rar</span></div>
           <h3>OGFN Reboot Internal</h3>
           <p>Internal client for OGFN Reboot.</p>
-          <a class="item-action" href="https://link-target.net/1381591/SiC9hF0ExUVP" target="_blank" rel="noopener noreferrer">Download</a>
+          <a class="item-action" href="https://link-target.net/1381591/SiC9hF0ExUVP" target="_blank" rel="noopener noreferrer" data-i18n="download_btn">Download</a>
         </div>
 
         <div class="item" style="height: auto; padding-top: 8px; padding-bottom: 8px; align-items: start;">
@@ -54,41 +67,41 @@
           <h3 style="padding-top: 0;">Red Match 2 Internal</h3>
           <div style="padding: 0 12px;">
             <details style="padding: 10px; background: rgba(0,0,0,0.2); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05);">
-              <summary style="cursor: pointer; color: var(--accent); font-weight: 500; font-size: 12px; user-select: none;">View Features</summary>
+              <summary style="cursor: pointer; color: var(--accent); font-weight: 500; font-size: 12px; user-select: none;" data-i18n="view_features">View Features</summary>
               <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px; font-size: 12px; color: var(--text-secondary);">
                 <div style="flex: 1; min-width: 100px;">
-                  <strong style="color: #fff; margin-bottom: 5px; display: block;">Combat:</strong>
+                  <strong style="color: #fff; margin-bottom: 5px; display: block;" data-i18n="combat">Combat:</strong>
                   <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6;">
-                    <li>&bull; Aimbot</li>
-                    <li>&bull; Rapid Fire</li>
-                    <li>&bull; Instant Reload</li>
-                    <li>&bull; Infinite Ammo <span style="color: #ef4444; font-weight: 700; font-size: 10px;">(BROKEN)</span></li>
-                    <li>&bull; Player Expander</li>
+                    <li data-i18n="aimbot">&bull; Aimbot</li>
+                    <li data-i18n="rapid_fire">&bull; Rapid Fire</li>
+                    <li data-i18n="instant_reload">&bull; Instant Reload</li>
+                    <li data-i18n="infinite_ammo">&bull; Infinite Ammo <span style="color: #ef4444; font-weight: 700; font-size: 10px;">(BROKEN)</span></li>
+                    <li data-i18n="player_expander">&bull; Player Expander</li>
                   </ul>
                 </div>
                 <div style="flex: 1; min-width: 100px;">
-                  <strong style="color: #fff; margin-bottom: 5px; display: block;">Visuals:</strong>
+                  <strong style="color: #fff; margin-bottom: 5px; display: block;" data-i18n="visuals">Visuals:</strong>
                   <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6;">
-                    <li>&bull; ESP</li>
-                    <li>&bull; Crosshair</li>
-                    <li>&bull; FOV Circle</li>
-                    <li>&bull; Chams <span style="color: #ef4444; font-weight: 700; font-size: 10px;">(BROKEN)</span></li>
-                    <li>&bull; Third Person</li>
+                    <li data-i18n="esp">&bull; ESP</li>
+                    <li data-i18n="crosshair">&bull; Crosshair</li>
+                    <li data-i18n="fov_circle">&bull; FOV Circle</li>
+                    <li data-i18n="chams">&bull; Chams <span style="color: #ef4444; font-weight: 700; font-size: 10px;">(BROKEN)</span></li>
+                    <li data-i18n="third_person">&bull; Third Person</li>
                   </ul>
                 </div>
                 <div style="flex: 1; min-width: 100px;">
-                  <strong style="color: #fff; margin-bottom: 5px; display: block;">Movement:</strong>
+                  <strong style="color: #fff; margin-bottom: 5px; display: block;" data-i18n="movement">Movement:</strong>
                   <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6;">
-                    <li>&bull; Speed Hack</li>
-                    <li>&bull; Fly Hack</li>
+                    <li data-i18n="speed_hack">&bull; Speed Hack</li>
+                    <li data-i18n="fly_hack">&bull; Fly Hack</li>
                   </ul>
                 </div>
               </div>
             </details>
           </div>
           <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 8px;">
-            <a class="item-action" href="https://cdn.discordapp.com/attachments/1467461291726868561/1532327058053791844/Redmatch_ISRAELSERVICES.zip?ex=6a6c7247&is=6a6b20c7&hm=d7e38578cd347bae26eb11edcea60d9b6dd5b2c1438eb954e4e5bbdc0ed1aec3&" target="_blank" rel="noopener noreferrer" style="margin: 0; text-align: center;">Download</a>
-            <a class="item-action" href="https://direct-link.net/1381591/56Im95zTu4Tv" target="_blank" rel="noopener noreferrer" style="margin: 0; text-align: center; color: #fff; border-color: rgba(91,155,213,0.5);">Get Key</a>
+            <a class="item-action" href="https://cdn.discordapp.com/attachments/1467461291726868561/1532327058053791844/Redmatch_ISRAELSERVICES.zip?ex=6a6c7247&is=6a6b20c7&hm=d7e38578cd347bae26eb11edcea60d9b6dd5b2c1438eb954e4e5bbdc0ed1aec3&" target="_blank" rel="noopener noreferrer" style="margin: 0; text-align: center;" data-i18n="download_btn">Download</a>
+            <a class="item-action" href="https://direct-link.net/1381591/56Im95zTu4Tv" target="_blank" rel="noopener noreferrer" style="margin: 0; text-align: center; color: #fff; border-color: rgba(91,155,213,0.5);" data-i18n="get_key_btn">Get Key</a>
           </div>
         </div>
       </div>
@@ -101,5 +114,6 @@
 
   <script src="js/ui.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/translations.js"></script>
 </body>
 </html>

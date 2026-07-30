@@ -15,22 +15,35 @@
   <div class="wrap">
     <header class="hdr">
       <span class="titlebar-text">ISRAEL SERVICES</span>
+      <select class="lang-select" style="margin-left: auto; background: transparent; color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2px 4px; font-size: 10px; cursor: pointer; outline: none;">
+        <option value="en" style="background: var(--panel);" selected>English (US)</option>
+        <option value="ar" style="background: var(--panel);">العربية</option>
+        <option value="de" style="background: var(--panel);">Deutsch</option>
+        <option value="es" style="background: var(--panel);">Español</option>
+        <option value="fr" style="background: var(--panel);">Français</option>
+        <option value="hi" style="background: var(--panel);">हिन्दी</option>
+        <option value="no" style="background: var(--panel);">Norsk</option>
+        <option value="pt" style="background: var(--panel);">Português</option>
+        <option value="ru" style="background: var(--panel);">Русский</option>
+        <option value="sv" style="background: var(--panel);">Svenska</option>
+        <option value="tr" style="background: var(--panel);">Türkçe</option>
+      </select>
     </header>
     <nav class="tabs">
-      <a class="tab" href="index.html">Home</a>
-      <a class="tab" href="guides.html">Guides</a>
-      <a class="tab" href="downloads.html">Downloads</a>
-      <a class="tab active" href="paid.html" aria-current="page">Paid Products</a>
+      <a class="tab" href="index.html" data-i18n="nav_home">Home</a>
+      <a class="tab" href="guides.html" data-i18n="nav_guides">Guides</a>
+      <a class="tab" href="downloads.html" data-i18n="nav_downloads">Downloads</a>
+      <a class="tab active" href="paid.html" aria-current="page" data-i18n="nav_paid">Paid Products</a>
     </nav>
 
     <main>
-      <a class="back" href="index.html">&larr; back</a>
+      <a class="back" href="index.html" data-i18n="back">&larr; back</a>
 
       <div class="panel" style="margin-bottom:16px">
-        <div class="panel-titlebar">Paid Products</div>
+        <div class="panel-titlebar" data-i18n="nav_paid">Paid Products</div>
         <div class="panel-body">
-          <h1 style="margin:0 0 6px;font-size:18px;color:var(--text)">Premium Store</h1>
-          <p style="margin:0;color:var(--muted)">all just placeholder for now no paid products yet</p>
+          <h1 style="margin:0 0 6px;font-size:18px;color:var(--text)" data-i18n="paid_title">Premium Store</h1>
+          <p style="margin:0;color:var(--muted)" data-i18n="paid_desc">all just placeholder for now no paid products yet</p>
         </div>
       </div>
 
@@ -153,8 +166,8 @@
       <button class="modal-close" id="closeModal">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
       </button>
-      <h3>Select Subscription</h3>
-      <p>Choose your preferred duration to purchase.</p>
+      <h3 data-i18n="select_sub">Select Subscription</h3>
+      <p data-i18n="choose_sub">Choose your preferred duration to purchase.</p>
       
       <div class="sub-options">
         <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
@@ -183,6 +196,7 @@
 
   <script src="js/ui.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/translations.js"></script>
   <script>
     (function() {
       const modal = document.getElementById('purchaseModal');
