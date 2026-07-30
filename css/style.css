@@ -283,15 +283,12 @@ main {
   padding: 8px 18px;
   min-height: 38px;
   border-radius: 6px;
-  box-shadow: 0 4px 14px rgba(88, 101, 242, 0.3);
   transition: all 0.2s ease;
 }
 
 .btn-discord:hover {
   background: #4752c4;
   border-color: #3f49ad;
-  box-shadow: 0 6px 20px rgba(88, 101, 242, 0.45);
-  transform: translateY(-2px);
   color: #fff;
 }
 
@@ -788,4 +785,32 @@ footer, .ftr {
   .item-action { margin: 8px 0 0; }
   section li { grid-template-columns: 30px 1fr; }
   section li span { grid-column: 2; }
+}
+
+/* Snowflakes */
+.snowflake {
+  position: fixed;
+  top: -10vh;
+  color: #add8e6; /* Light Blue */
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 10px rgba(91, 155, 213, 0.8), 0 0 20px rgba(91, 155, 213, 0.6);
+  pointer-events: none;
+  z-index: -1; /* Placed between video and content */
+  user-select: none;
+  will-change: transform, top;
+}
+
+@keyframes fall {
+  0% {
+    top: -10vh;
+  }
+  100% {
+    top: 110vh;
+  }
+}
+@keyframes sway {
+  0% { transform: translateX(0px) rotate(0deg); }
+  33% { transform: translateX(30px) rotate(120deg); }
+  66% { transform: translateX(-30px) rotate(240deg); }
+  100% { transform: translateX(0px) rotate(360deg); }
 }

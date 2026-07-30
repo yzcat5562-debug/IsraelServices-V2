@@ -60,4 +60,30 @@
     requestAnimationFrame(loop);
   }
   loop();
+
+  // Premium Bokeh Snowflakes
+  function createSnowflake() {
+    var sf = document.createElement('div');
+    sf.className = 'snowflake';
+    sf.textContent = '✡';
+    sf.style.left = Math.random() * 100 + 'vw';
+    
+    var duration = Math.random() * 8 + 6; // 6s to 14s (slower, floating)
+    var swayDuration = Math.random() * 4 + 4; // 4s to 8s
+    sf.style.animation = 'fall ' + duration + 's linear forwards, sway ' + swayDuration + 's ease-in-out infinite alternate';
+    
+    // Vary size significantly to create depth of field
+    var sizePx = Math.random() * 12 + 8; // 8px to 20px
+    if (Math.random() > 0.8) sizePx += Math.random() * 15; // larger out-of-focus snowflake
+    
+    sf.style.fontSize = sizePx + 'px';
+    sf.style.opacity = Math.random() * 0.5 + 0.5; // Much more visible (0.5 to 1.0)
+    document.body.appendChild(sf);
+    
+    setTimeout(function() {
+      if(sf && sf.parentNode) sf.parentNode.removeChild(sf);
+    }, duration * 1000);
+  }
+  
+  setInterval(createSnowflake, 120); // Spawn them much faster
 })();
