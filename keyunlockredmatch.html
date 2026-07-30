@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Israel Services — Key</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1360691056823373826/1532087254531702794/star_of_david_012-removebg-preview.png?ex=6a6b92f2&is=6a6a4172&hm=dc20c93ca51faea9f51946ade5fdf922f52044cd069295b09a28f26061ce1a10&">
+  <link rel="stylesheet" href="css/style.css?v=1.1">
+</head>
+<body>
+  <video class="bg-video" autoplay loop muted playsinline>
+    <source src="Background.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+  <div class="wrap" style="justify-content: center; align-items: center; min-height: 100vh; background: transparent; border: none; box-shadow: none;">
+    <div class="panel" style="width: 100%; max-width: 400px; text-align: center; padding: 40px 20px;">
+      <h1 style="margin: 0 0 16px; font-size: 24px; color: var(--text);">Red Match 2 Key</h1>
+      <p style="margin: 0 0 24px; color: var(--muted); font-size: 14px;">Here is your unlock key. Click to copy.</p>
+      
+      <div id="keyBox" style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-strong); padding: 16px; border-radius: 6px; font-family: var(--mono); font-size: 20px; color: var(--accent); cursor: pointer; transition: all 0.2s ease;" onclick="copyKey()">
+        WeH4TEJ3WS
+      </div>
+      
+      <div id="copyAlert" style="margin-top: 16px; color: #22c55e; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.2s ease;">Copied to clipboard!</div>
+      
+      <a href="index.html" class="btn" style="margin-top: 24px;">Return Home</a>
+    </div>
+  </div>
+
+  <script>
+    function copyKey() {
+      navigator.clipboard.writeText("WeH4TEJ3WS").then(() => {
+        const box = document.getElementById('keyBox');
+        const alert = document.getElementById('copyAlert');
+        
+        box.style.borderColor = '#22c55e';
+        box.style.color = '#22c55e';
+        alert.style.opacity = '1';
+        
+        setTimeout(() => {
+          box.style.borderColor = 'var(--border-strong)';
+          box.style.color = 'var(--accent)';
+          alert.style.opacity = '0';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
