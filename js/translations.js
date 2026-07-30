@@ -13,7 +13,7 @@ const translations = {
     "downloads_desc": "Free products. Paid products go through the Discord.",
     "type": "Type",
     "name": "Name",
-    "description": "Description",
+    "description": "Feature list",
     "action": "Action",
     "download_btn": "Download",
     "get_key_btn": "Get Key",
@@ -790,8 +790,10 @@ function updateLanguage(lang) {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
       // If the element has children like a span for broken, keep innerHTML for specific keys
-      if (key === 'infinite_ammo' || key === 'chams') {
+      if (key === 'infinite_ammo' || key === 'chams' || key === 'instant_reload') {
         el.innerHTML = translations[lang][key] + ' <span style="color: #ef4444; font-weight: 700; font-size: 10px;">' + translations[lang]['broken'] + '</span>';
+      } else if (key === 'speed_hack') {
+        el.innerHTML = translations[lang][key] + ' <span style="color: #f59e0b; font-weight: 700; font-size: 10px;">(SEMI BROKEN)</span>';
       } else {
         el.textContent = translations[lang][key];
       }
