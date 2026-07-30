@@ -26,9 +26,119 @@
     <main>
       <a class="back" href="index.html">&larr; back</a>
 
-      <div class="panel" style="margin-bottom:16px; text-align: center; padding: 60px 20px;">
-        <h1 style="margin:0 0 10px;font-size:24px;color:var(--text)">Coming Soon...</h1>
-        <p style="margin:0;color:var(--muted)">We're currently working on this section. Check back later!</p>
+      <div class="panel" style="margin-bottom:16px">
+        <div class="panel-titlebar">Paid Products</div>
+        <div class="panel-body">
+          <h1 style="margin:0 0 6px;font-size:18px;color:var(--text)">Premium Store</h1>
+          <p style="margin:0;color:var(--muted)">all just placeholder for now no paid products yet</p>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <div class="product-status-badge">[STATUS]</div>
+            [Image Placeholder]
+          </div>
+          <div class="product-card-body">
+            <div class="product-meta">
+              <span class="product-featured">FEATURED</span>
+              <span class="product-stock in">
+                <span class="product-stock-dot"></span> [Stock Status]
+              </span>
+            </div>
+            <h3>[Product Name]</h3>
+            
+            <div class="product-price-label">STARTING FROM</div>
+            <div class="product-price">[Price]</div>
+            
+            <ul class="product-features">
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                [Feature 1]
+              </li>
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                [Feature 2]
+              </li>
+            </ul>
+            
+            <button class="btn-purchase purchase-btn">
+              Purchase Now &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <div class="product-status-badge">[STATUS]</div>
+            [Image Placeholder]
+          </div>
+          <div class="product-card-body">
+            <div class="product-meta">
+              <span class="product-featured">FEATURED</span>
+              <span class="product-stock in">
+                <span class="product-stock-dot"></span> [Stock Status]
+              </span>
+            </div>
+            <h3>[Product Name]</h3>
+            
+            <div class="product-price-label">STARTING FROM</div>
+            <div class="product-price">[Price]</div>
+            
+            <ul class="product-features">
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                [Feature 1]
+              </li>
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                [Feature 2]
+              </li>
+            </ul>
+            
+            <button class="btn-purchase purchase-btn">
+              Purchase Now &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="product-card-img">
+            <div class="product-status-badge">[STATUS]</div>
+            [Image Placeholder]
+          </div>
+          <div class="product-card-body">
+            <div class="product-meta">
+              <span class="product-featured">FEATURED</span>
+              <span class="product-stock in">
+                <span class="product-stock-dot"></span> [Stock Status]
+              </span>
+            </div>
+            <h3>[Product Name]</h3>
+            
+            <div class="product-price-label">STARTING FROM</div>
+            <div class="product-price">[Price]</div>
+            
+            <ul class="product-features">
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                [Feature 1]
+              </li>
+              <li>
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                [Feature 2]
+              </li>
+            </ul>
+            
+            <button class="btn-purchase purchase-btn">
+              Purchase Now &rarr;
+            </button>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -37,7 +147,66 @@
     </footer>
   </div>
 
+  <!-- Purchase Modal -->
+  <div class="modal" id="purchaseModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <h3>Select Subscription</h3>
+      <p>Choose your preferred duration to purchase.</p>
+      
+      <div class="sub-options">
+        <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
+          <span>1 Day</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
+          <span>3 Day</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
+          <span>7 Day</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
+          <span>30 Day</span>
+          <span>&rarr;</span>
+        </a>
+        <a href="https://discord.gg/vZ7yqrrRYp" target="_blank" class="sub-btn">
+          <span>Lifetime</span>
+          <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script src="js/ui.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    (function() {
+      const modal = document.getElementById('purchaseModal');
+      const closeBtn = document.getElementById('closeModal');
+      const purchaseBtns = document.querySelectorAll('.purchase-btn');
+
+      purchaseBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.add('active');
+        });
+      });
+
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+      });
+
+      // Close modal on click outside
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
