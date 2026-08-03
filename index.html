@@ -1,130 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Israel Services</title>
-  <link rel="icon" href="assets/images/star_of_david_012-removebg-preview.png">
-  <link rel="stylesheet" href="css/style.css?v=1.1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <video class="bg-video" autoplay loop muted playsinline>
-    <source src="Background.mp4" type="video/mp4">
-  </video>
-  <div class="bg-overlay"></div>
-  <div class="page">
-    <header>
-      <img src="assets/images/star_of_david_012-removebg-preview.png" alt="Star of David" style="width: 16px; height: 16px; margin-right: 6px; object-fit: contain;">
-      <span class="titlebar-text">ISRAEL SERVICES</span>
-      <select class="lang-select" style="margin-left: auto; background: transparent; color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 2px 4px; font-size: 10px; cursor: pointer; outline: none;">
-        <option value="en" style="background: var(--panel);" selected>English (US)</option>
-        <option value="ar" style="background: var(--panel);">العربية</option>
-        <option value="de" style="background: var(--panel);">Deutsch</option>
-        <option value="es" style="background: var(--panel);">Español</option>
-        <option value="fr" style="background: var(--panel);">Français</option>
-        <option value="hi" style="background: var(--panel);">हिन्दी</option>
-        <option value="no" style="background: var(--panel);">Norsk</option>
-        <option value="pt" style="background: var(--panel);">Português</option>
-        <option value="ru" style="background: var(--panel);">Русский</option>
-        <option value="sv" style="background: var(--panel);">Svenska</option>
-        <option value="tr" style="background: var(--panel);">Türkçe</option>
-      </select>
-    </header>
-    <nav class="tabs">
-      <a class="tab active" href="index.html" aria-current="page" data-i18n="nav_home">Home</a>
-      <a class="tab" href="guides.html" data-i18n="nav_guides">Guides</a>
-      <a class="tab" href="downloads.html" data-i18n="nav_downloads">Downloads</a>
 
-    </nav>
+    <div class="enter-screen" id="enter-screen">
+        <div class="enter-text">[ click to enter ]</div>
+    </div>
 
-    <main>
-      <section class="hero" style="text-align: center; padding: 40px 20px 20px;">
-        <h1>ISRAEL SERVICES</h1>
-        <p>Join the discord for @'s on cheat updates.</p>
-      </section>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="media/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="background-overlay"></div>
+    <div class="particles" id="particles"></div>
 
-      <section>
-        <h2 data-i18n="staff">Staff/Devs</h2>
-        <ul>
-          <li>
-            <img src="assets/images/yzcat.webp" alt="Yzcat" onerror="this.src='assets/images/yzcat.jpg';this.style.display='none'">
-            <div>
-              <strong>Yzcat</strong> <a href="https://yzcat.xyz/" target="_blank" style="color: var(--accent); text-decoration: none; margin-left: 5px; font-size: 0.9em;">https://yzcat.xyz/</a>
-            </div>
-            <span>CEO / Reboot Internal Dev / Site Dev</span>
-          </li>
-          <li>
-            <img src="assets/images/dw4i.webp" alt="Dw4i" onerror="this.src='assets/images/dw4i.jpg';this.style.display='none'">
-            <div>
-              <strong>Dw4i</strong> <a href="https://guns.lol/dw4i" target="_blank" style="color: var(--accent); text-decoration: none; margin-left: 5px; font-size: 0.9em;">https://guns.lol/dw4i</a>
-            </div>
-            <span>CEO / Reboot Internal Dev</span>
-          </li>
-          <li>
-            <img src="https://cdn.discordapp.com/avatars/1219347439333408848/1c7a207c19d554fa464b6f616b1a1a2a.png?size=512" alt="Indica">
-            <div>
-              <strong>Indica</strong> <a href="https://indica0.netlify.app/" target="_blank" style="color: var(--accent); text-decoration: none; margin-left: 5px; font-size: 0.9em;">https://indica0.netlify.app/</a>
-            </div>
-            <span>Admin / BloodStrike External Dev</span>
-          </li>
-          <li>
-            <img src="assets/images/vide.png" alt="Vide">
-            <div>
-              <strong>Vide</strong> <a href="https://guns.lol/hyp3x1337" target="_blank" style="color: var(--accent); text-decoration: none; margin-left: 5px; font-size: 0.9em;">https://guns.lol/hyp3x1337</a>
-            </div>
-            <span>Cs2 Internal Dev</span>
-          </li>
-        </ul>
-      </section>
+    <div class="bio-container">
+        <div class="bio-card">
+            <div class="left-column">
+                <div class="avatar-container">
+                    <!-- Replace with your own avatar URL -->
+                    <img src="media/profile.jpg" alt="Avatar" class="avatar" id="avatar-img">
+                </div>
 
-      <section class="socials">
-        <h2 data-i18n="socials">Socials</h2>
-        <p data-i18n="socials_desc">Join the community on Discord and subscribe to our YouTube channel.</p>
-        <div class="social-buttons">
-          <a class="btn btn-discord" href="https://discord.gg/vZ7yqrrRYp" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-              <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
-            </svg>
-            <span data-i18n="discord_join">Join Discord Server</span>
-          </a>
-          <a class="btn btn-youtube" href="https://www.youtube.com/@IsraelServicesXyz" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-            </svg>
-            <span data-i18n="youtube_sub">Subscribe to YouTube</span>
-          </a>
+                <div class="user-info">
+                    <h1 class="username">𝔂𝔃𝓬𝓪𝓽 <img src="media/joint.png" class="verified-badge-img" alt="Verified">
+                    </h1>
+                    <p class="typewriter" id="typewriter"></p>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: -10px; margin-bottom: 15px; padding: 6px 14px; background: rgba(255, 255, 255, 0.05); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); width: fit-content; margin-inline: auto; backdrop-filter: blur(5px); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <img src="https://cdn.discordapp.com/attachments/1360688928377540759/1532559241095807046/Star_of_David-removebg-preview.png?ex=6a6d4a84&is=6a6bf904&hm=dbec98b27c17f4cee31bc59cbaaa95c428d8a719013ffc02f5717440625e8a2c&" alt="Star of David" style="width: 14px; height: 14px; filter: drop-shadow(0 0 3px rgba(255,255,255,0.4));">
+                        <span style="font-size: 0.8rem; font-weight: 500; letter-spacing: 0.5px; color: #d0d0d0; text-transform: uppercase;">Owner of <a href="https://israelservices.xyz" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 700; transition: all 0.3s ease;" onmouseover="this.style.textShadow='0 0 10px rgba(255,255,255,0.8)'" onmouseout="this.style.textShadow='none'">israelservices.xyz</a></span>
+                    </div>
+                    <div class="badges">
+                        <span class="badge" title="Badge 1"><img
+                                src="https://tenor.com/view/cat-meme-gif-14922675818058709477.gif"
+                                class="badge-img"></span>
+                        <span class="badge" title="Badge 2"><img
+                                src="https://tenor.com/view/cat-thumbs-up-thumbs-up-cat-thumbs-up-meme-gif-5676038700371371386.gif"
+                                class="badge-img"></span>
+                        <span class="badge" title="Badge 3"><img
+                                src="https://tenor.com/view/weird-car-super-idol-cat-cat-talking-viking-cat-tiktok-cat-gif-7042677436176156601.gif"
+                                class="badge-img"></span>
+                        <span class="badge" title="Badge 4"><img
+                                src="https://tenor.com/view/my-wife-love-cute-cat-crunchy-cat-elisa-bioss-gif-8847263560588843417.gif"
+                                class="badge-img"></span>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://guns.lol/yzcat" class="social-link no-border" style="--clr: #ffffff;" target="_blank">
+                        <img src="media/guns-icon.png" alt="Guns.lol" class="custom-icon-img">
+                    </a>
+
+                    <a href="https://steamcommunity.com/id/YzCat420/" class="social-link" style="--clr: #ffffff;"
+                        target="_blank"><i class="fab fa-steam"></i></a>
+
+                    <div class="social-dropdown">
+                        <a href="javascript:void(0)" class="social-link" style="--clr: #ffffff;"><i
+                                class="fab fa-tiktok"></i></a>
+                        <div class="dropdown-content">
+                            <a href="https://www.tiktok.com/@yzcat420" target="_blank">@yzcat420</a>
+                            <a href="https://www.tiktok.com/@n0stalgia_time" target="_blank">@n0stalgia_time</a>
+                        </div>
+                    </div>
+
+                    <a href="https://www.instagram.com/yzcat420" class="social-link" style="--clr: #ffffff;" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <div class="social-dropdown">
+                        <a href="javascript:void(0)" class="social-link" style="--clr: #ffffff;">
+                            <img src="https://cdn.simpleicons.org/roblox/white" alt="Roblox" style="width: 1.2em; height: 1.2em; filter: drop-shadow(0 0 4px rgba(255,255,255,0.3)); transition: all 0.3s ease;" onmouseover="this.style.filter='drop-shadow(0 0 8px rgba(255,255,255,0.8))'" onmouseout="this.style.filter='drop-shadow(0 0 4px rgba(255,255,255,0.3))'">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="https://www.roblox.com/users/3505408337/profile" target="_blank">YZ_star69</a>
+                            <a href="https://www.roblox.com/users/97713/profile" target="_blank">Patchi</a>
+                            <a href="https://www.roblox.com/users/1233784/profile" target="_blank">MorganIIII</a>
+                        </div>
+                    </div>
+
+                    <div class="social-dropdown">
+                        <a href="javascript:void(0)" class="social-link" style="--clr: #ffffff;"><i
+                                class="fas fa-wallet"></i></a>
+                        <div class="dropdown-content" style="min-width: 150px;">
+                            <a href="javascript:void(0)" class="copy-wallet"
+                                data-wallet="bc1qlekzw3tseku6t53jth2qqj93uvkygexx8vddha">Bitcoin (BTC)</a>
+                            <a href="javascript:void(0)" class="copy-wallet"
+                                data-wallet="0xf368B2c2926b90c98727919390A8eDE583E0492b">Ethereum (ETH)</a>
+                            <a href="javascript:void(0)" class="copy-wallet"
+                                data-wallet="Ecs8LV8AXYHA84ExnrXqBha5kJKqCucDA36VDguKTjHp">Solana (SOL)</a>
+                            <a href="javascript:void(0)" class="copy-wallet"
+                                data-wallet="LWEZKZCMZ43g2ui9YY3Jsv5beJT7JGamrc">Litecoin (LTC)</a>
+                        </div>
+                    </div>
+
+                    <a href="mailto:yzcat5562@gmail.com" class="social-link" style="--clr: #ffffff;"><i
+                            class="fas fa-envelope"></i></a>
+
+                    <a href="https://kick.com/yzcat420" class="social-link" style="--clr: #ffffff;" target="_blank">
+                        <img src="https://cdn.simpleicons.org/kick/white" alt="Kick" style="width: 1.2em; height: 1.2em; filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3)); transition: all 0.3s ease;" onmouseover="this.style.filter='drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))'" onmouseout="this.style.filter='drop-shadow(0 0 4px rgba(255, 255, 255, 0.3))'">
+                    </a>
+
+                    <a href="https://www.twitch.tv/barkbarkshottytw" class="social-link" style="--clr: #ffffff;"
+                        target="_blank"><i class="fab fa-twitch"></i></a>
+
+                    <a href="https://open.spotify.com/user/31ft3pbipjanfzug45p66hbzgrfm" class="social-link"
+                        style="--clr: #ffffff;" target="_blank"><i class="fab fa-spotify"></i></a>
+
+                    <a href="https://onlyfans.wtf/yzcat420" class="social-link" style="--clr: #ffffff;" target="_blank">
+                        <img src="https://cdn.simpleicons.org/onlyfans/white" alt="OnlyFans" style="width: 1.2em; height: 1.2em; filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3)); transition: all 0.3s ease;" onmouseover="this.style.filter='drop-shadow(0 0 8px rgba(255, 255, 255, 0.8))'" onmouseout="this.style.filter='drop-shadow(0 0 4px rgba(255, 255, 255, 0.3))'">
+                    </a>
+
+                    <a href="https://vacban.wtf/members/118645/" class="social-link" style="--clr: #ffffff; text-decoration: none;" title="VacBan" target="_blank">
+                        <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.1em; letter-spacing: -1px; line-height: 1;">VB</span>
+                    </a>
+
+                    <a href="https://e-z.bio/yzcat" class="social-link no-border" style="--clr: #ffffff;" target="_blank">
+                        <img src="media/ez-icon.png" alt="E-Z.bio" class="custom-icon-img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="links-section">
+                    <a href="https://www.youtube.com/@YzCat123" class="custom-btn yt-btn" target="_blank">
+                        <img src="media/yt-pfp.png" class="btn-icon-img" alt="YT">
+                        <div class="yt-text-wrapper">
+                            <div class="yt-username"><i class="fab fa-youtube" style="color: #FF0000;"></i> YzCat123</div>
+                            <div class="yt-stats">
+                                <span id="yt-subs">1.5K</span> Subscribers
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Live Discord Presence Card -->
+                    <div class="discord-card" id="discord-card">
+                        <div class="discord-avatar-wrapper">
+                            <img src="media/profile.jpg" id="discord-pfp" alt="Discord">
+                            <div class="discord-status" id="discord-status-dot"></div>
+                        </div>
+                        <div class="discord-info">
+                            <div class="discord-username" id="discord-username">Loading Discord...</div>
+                            <div class="discord-id" id="discord-id">Please set your Discord ID in script.js</div>
+                        </div>
+                        <i class="fab fa-discord discord-watermark"></i>
+                    </div>
+
+                    <div class="audio-player">
+                        <div class="player-content">
+                            <div class="audio-controls-group">
+                                <i class="fas fa-step-backward" id="prev-song-btn"></i>
+                                <div class="play-btn-container" id="play-pause-btn">
+                                    <i class="fas fa-play" id="play-icon"></i>
+                                </div>
+                                <i class="fas fa-step-forward" id="next-song-btn"></i>
+                            </div>
+                            <div class="track-info">
+                                <div class="song-title">assumptions</div>
+                                <div class="artist">now playing</div>
+                            </div>
+                            <div class="volume-wrapper">
+                                <i class="fas fa-volume-up" id="mute-btn"></i>
+                                <div class="volume-slider-container">
+                                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-container">
+                            <span id="current-time">00:00</span>
+                            <div class="progress-bar-bg" id="progress-bar-bg">
+                                <div class="progress-fill" id="progress-fill"></div>
+                                <div class="progress-thumb" id="progress-thumb"></div>
+                            </div>
+                            <span id="total-time">03:37</span>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events Countdown -->
+                    <div class="countdown-card">
+                        <div class="countdown-header">
+                            <i class="fas fa-calendar-alt"></i> Upcoming Events (Days Left)
+                        </div>
+                        <div class="countdown-timer">
+                            <div class="time-box"><span id="cd-newyears">00</span><small>New Year's</small></div>
+                            <div class="time-box"><span id="cd-july4">00</span><small>4th July</small></div>
+                            <div class="time-box"><span id="cd-halloween">00</span><small>Halloween</small></div>
+                            <div class="time-box"><span id="cd-christmas">00</span><small>Christmas</small></div>
+                        </div>
+                    </div>
+                    
+                    <button class="custom-btn" id="update-log-btn" style="justify-content: center; font-weight: 600; font-size: 1rem;">
+                        <i class="fas fa-history" style="margin-right: 8px;"></i> Update Log
+                    </button>
+                </div>
+            </div>
         </div>
-      </section>
+        </div>
+    </div>
 
-      <section class="update-log">
-        <h2 data-i18n="update_log">Site Update Log</h2>
-        <ul class="log-list">
-          <li>
-            <div class="log-header">
-              <strong>v1.2.0 - Socials & Visuals Update</strong>
-              <span>August 2, 2026</span>
+    <!-- Audio element for background music. Replace src with your own audio file or link -->
+    <audio id="bg-music" loop>
+        <source src="media/bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Update Log Modal -->
+    <div id="update-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-update-modal">&times;</span>
+            <h2 style="margin-bottom: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;"><i class="fas fa-clipboard-list"></i> Update Log</h2>
+            <div class="log-entry" style="margin-bottom: 15px;">
+                <h3 style="color: #a0a0a0; font-size: 0.9rem; margin-bottom: 10px;">July 31, 2026</h3>
+                <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; line-height: 1.6; color: #e0e0e0;">
+                    <li>Added ownership badge for israelservices.xyz.</li>
+                    <li>Updated Kick and Roblox logos to better logos.</li>
+                    <li>Audio player now selects a random song when you enter.</li>
+                    <li>Added a secret "Birthday Edition" that activates on July 25th with confetti!</li>
+                    <li>Increased snowfall intensity.</li>
+                    <li>Added OnlyFans to social links.</li>
+                </ul>
             </div>
-            <div class="log-content">
-              <p>Welcome to the <strong>Socials & Visuals Update</strong>! We've made some exciting changes to help you stay better connected with our community and content:</p>
-              <ul style="margin-top: 8px; padding-left: 20px;">
-                <li style="margin-bottom: 4px;"><strong>Hero Section:</strong> Added a beautiful new animated gradient title at the top of the page!</li>
-                <li style="margin-bottom: 4px;"><strong>Update Log:</strong> We updated the update log to tell you that we added an update log!</li>
-                <li style="margin-bottom: 4px;"><strong>YouTube Integration:</strong> We've officially added our new YouTube channel link. Be sure to subscribe to catch all our latest video tutorials, guides, and update announcements!</li>
-                <li><strong>Socials Hub:</strong> The Discord section has been beautifully rebranded into a unified Socials section. It's now easier than ever to find and join our growing community platforms.</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
+        </div>
+    </div>
 
-    <footer>
-      <span>&copy; <span id="year"></span> Israel Services</span>
-    </footer>
-  </div>
-
-  <script src="js/ui.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/translations.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
